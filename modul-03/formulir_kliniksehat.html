@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Pasien Klinik Sehat</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Pasien</h2>
+    <h3>Klinik Sehat</h3>
+
+    <form action="formulir_kliniksehat.html" method="post">
+        Nama lengkap: <input type="text" name="nama" required/> <br/>
+        Tanggal lahir: <input type="date" name="tanggal_lahir" required/> <br/>
+
+        Jenis kelamin:
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked/> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="perempuan"/> Perempuan
+        <br/>
+
+        Golongan darah:
+        <select name="golongan_darah">
+            <option value="" selected>Tidak tahu</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="O">O</option>
+        </select>
+        <br/>
+
+        Alamat: <br/>
+        <textarea name="alamat" rows="3" cols="40" required></textarea>
+        <br/>
+
+        Nomor HP: <input type="tel" name="telepon" required/> <br/>
+
+        Poli tujuan:
+        <select name="poli">
+            <option value="umum" selected>Dokter umum</option>
+            <option value="gigi">Dokter gigi</option>
+            <option value="anak">Dokter anak</option>
+            <option value="kandungan">Kandungan</option>
+        </select>
+        <br/>
+
+        Tanggal kunjungan: <input type="date" name="tanggal_kunjungan" required/> <br/>
+        Jam kunjungan: <input type="time" name="jam" required/> <br/>
+
+        Cara pembayaran:
+        <input type="radio" name="pembayaran" value="umum" checked/> Umum
+        <input type="radio" name="pembayaran" value="bpjs"/> BPJS
+        <input type="radio" name="pembayaran" value="asuransi"/> Asuransi
+        <br/>
+
+        Keluhan utama: <br/>
+        <textarea name="keluhan" rows="4" cols="40" required></textarea>
+        <br/>
+
+        Riwayat penyakit:
+        <input type="checkbox" name="riwayat_hipertensi" value="hipertensi"/> Hipertensi
+        <input type="checkbox" name="riwayat_diabetes" value="diabetes"/> Diabetes
+        <input type="checkbox" name="riwayat_asma" value="asma"/> Asma
+        <input type="checkbox" name="riwayat_jantung" value="jantung"/> Jantung
+        <br/>
+
+        Alergi: <input type="text" name="alergi" placeholder="Kosongkan jika tidak ada"/> <br/>
+
+        <input type="checkbox" name="setuju" value="ya" required/>
+        Data yang saya isi sudah benar.
+        <br/>
+
+        <input type="submit" value="Daftar"/>
+        <input type="reset" value="Hapus Isian"/>
+    </form>
+</body>
+</html>

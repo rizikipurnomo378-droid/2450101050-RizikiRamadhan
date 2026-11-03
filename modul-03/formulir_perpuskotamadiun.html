@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Anggota Perpustakaan Kota Madiun</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Anggota</h2>
+    <h3>Perpustakaan Kota Madiun</h3>
+
+    <form action="formulir_perpuskotamadiun.html" method="post">
+        Nama lengkap: <input type="text" name="nama" required/> <br/>
+        NIK / No. kartu pelajar: <input type="text" name="nik" maxlength="16" required/> <br/>
+        Tempat lahir: <input type="text" name="tempat_lahir"/> <br/>
+        Tanggal lahir: <input type="date" name="tanggal_lahir" required/> <br/>
+
+        Jenis kelamin:
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked/> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="perempuan"/> Perempuan
+        <br/>
+
+        Pekerjaan:
+        <select name="pekerjaan">
+            <option value="pelajar" selected>Pelajar</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="pegawai">Pegawai / Karyawan</option>
+            <option value="wiraswasta">Wiraswasta</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+        <br/>
+
+        Alamat: <br/>
+        <textarea name="alamat" rows="3" cols="40" required></textarea>
+        <br/>
+
+        Kecamatan:
+        <select name="kecamatan">
+            <option value="Manguharjo">Manguharjo</option>
+            <option value="Taman" selected>Taman</option>
+            <option value="Kartoharjo">Kartoharjo</option>
+        </select>
+        <br/>
+
+        Nomor HP: <input type="tel" name="telepon" required/> <br/>
+        Email: <input type="email" name="email"/> <br/>
+
+        Minat baca:
+        <input type="checkbox" name="minat_novel" value="novel"/> Novel
+        <input type="checkbox" name="minat_pelajaran" value="pelajaran"/> Buku pelajaran
+        <input type="checkbox" name="minat_sains" value="sains"/> Sains
+        <input type="checkbox" name="minat_sejarah" value="sejarah"/> Sejarah
+        <br/>
+
+        Saran atau permintaan buku: <br/>
+        <textarea name="saran" rows="3" cols="40"></textarea>
+        <br/>
+
+        <input type="checkbox" name="setuju" value="ya" required/>
+        Saya bersedia mematuhi tata tertib perpustakaan.
+        <br/>
+
+        <input type="submit" value="Daftar"/>
+        <input type="reset" value="Hapus Isian"/>
+    </form>
+</body>
+</html>
